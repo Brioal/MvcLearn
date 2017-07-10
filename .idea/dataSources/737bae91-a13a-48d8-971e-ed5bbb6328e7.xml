@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="homework@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="homework">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="sys"/>
+    <table id="7" parent="2" name="shapes">
+      <Comment>图形数据库</Comment>
+    </table>
+    <column id="8" parent="7" name="value1">
+      <Position>1</Position>
+      <DataType>double|0</DataType>
+      <DefaultExpression>&apos;-1&apos;</DefaultExpression>
+    </column>
+    <column id="9" parent="7" name="value2">
+      <Position>2</Position>
+      <DataType>double|0</DataType>
+      <DefaultExpression>&apos;-1&apos;</DefaultExpression>
+    </column>
+    <column id="10" parent="7" name="value3">
+      <Position>3</Position>
+      <DataType>double|0</DataType>
+      <DefaultExpression>&apos;-1&apos;</DefaultExpression>
+    </column>
+    <column id="11" parent="7" name="value4">
+      <Position>4</Position>
+      <DataType>double|0</DataType>
+      <DefaultExpression>&apos;-1&apos;</DefaultExpression>
+    </column>
+    <column id="12" parent="7" name="area">
+      <Position>5</Position>
+      <DataType>double|0</DataType>
+      <DefaultExpression>&apos;-1&apos;</DefaultExpression>
+    </column>
+    <column id="13" parent="7" name="type">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="14" parent="7" name="xuhao">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="15" parent="7" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>xuhao</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
