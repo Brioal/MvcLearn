@@ -14,6 +14,8 @@
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <script>
         function choose(index) {
+            var obj = document.getElementById("selector");
+            obj.options[index].selected = true;  //保持选中状态
             switch (index) {
                 case 0:
                     //输入三角形状
@@ -70,7 +72,7 @@
 <div class="container">
     <h1>图形面积计算</h1>
     <hr/>
-     <a href="/records" type="button" class="btn btn-primary btn-sm">查看所有记录</a>
+     <a href="/records/0" type="button" class="btn btn-primary btn-sm">查看所有记录</a>
     <br>
     <br>
     <form:form action="/calcu" method="post" commandName="shape" role="form">
@@ -78,7 +80,7 @@
             <label>图形选择:</label>
             <br/>
             <div class="form-group">
-                <select class="form-control" name="type" onchange="choose(this.selectedIndex)">
+                <select id="selector" class="form-control" name="type" onchange="choose(this.selectedIndex)">
                     <option value="1">三角形</option>
                     <option value="2">矩形</option>
                     <option value="3">圆形</option>

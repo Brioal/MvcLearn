@@ -24,8 +24,18 @@ public class ShapesEntity {
     private int mXuhao;
     private String mTime = "";
     private String mStringType = "";
+    private Double value1;
+    private Double value2;
+    private Double value3;
+    private Double value4;
+    private Double area;
+    private int type;
+    private long xuhao;
+    private String stringType;
+    private String time;
 
-
+    @Basic
+    @Column(name = "time", nullable = true, length = 255)
     public String getTime() {
         return mTime;
     }
@@ -34,6 +44,8 @@ public class ShapesEntity {
         mTime = time;
     }
 
+    @Basic
+    @Column(name = "stringType", nullable = true, length = 255)
     public String getStringType() {
         return mStringType;
     }
@@ -106,6 +118,10 @@ public class ShapesEntity {
     @Column(name = "xuhao", nullable = false)
     public int getXuhao() {
         return mXuhao;
+    }
+
+    public void setXuhao(long xuhao) {
+        this.xuhao = xuhao;
     }
 
     public void setXuhao(int xuhao) {

@@ -49,7 +49,7 @@
         </tr>
     </table>
     <a href="/" type="button" class="btn btn-primary btn-sm">返回计算</a>
-    <a href="/records" type="button" class="btn btn-primary btn-sm">历史纪录</a>
+    <a href="/records/0" type="button" class="btn btn-primary btn-sm">历史纪录</a>
 </div>
 
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
